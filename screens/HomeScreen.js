@@ -47,11 +47,11 @@ export default class HomeScreen extends React.Component {
               />
             <Text>Today</Text>
             <Text style={styles.confirmButton}>Confirm</Text>
+            <Text style={styles.skipButton}>Skip</Text>
           </View>
         </ScrollView>
 
         <View style={styles.tabBarInfoContainer}>
-          <Text style={styles.skipButton}>Skip</Text>
         </View>
       </View>
     );
@@ -80,18 +80,19 @@ const styles = StyleSheet.create({
   },
   confirmButton: {
     fontSize: 50,
-    color: '#000',
-    backgroundColor: 'orange',
+    color: '#fff',
+    backgroundColor: 'grey',
     textAlign: 'center',
     paddingHorizontal: 30,
     marginTop: 40
   },
   skipButton: {
     fontSize: 50,
-    color: '#000',
-    backgroundColor: 'orange',
+    color: '#fff',
+    backgroundColor: 'grey',
     textAlign: 'center',
-    paddingHorizontal: 30,
+    paddingHorizontal: 69,
+    marginTop: 50
   },
   welcomeImage: {
     width: 100,
@@ -116,7 +117,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 4,
   },
   getStartedText: {
-    fontSize: 50,
+    fontSize: 30,
     color: '#000',
     textAlign: 'center',
     marginTop: 50
